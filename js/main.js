@@ -6,16 +6,3 @@ $(window).scroll(function(){
         $('nav').removeClass('header2');
     }
 });
-
-
-
-onload  = start;
-
-function start(){	
-    var i = 1;
-    function Move(){ 	
-        i = (i%4)+1;
-        document.getElementById('i'+i).checked = true;
-    }
-    setInterval(Move,3000);
-}
